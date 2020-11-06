@@ -1,0 +1,36 @@
+Script started on Sun 15 Mar 2020 10:38:38 PM PDT
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ make
+gcc -c ImageList.c -o ImageList.o -ansi -std=c99 -Wall -g
+gcc -c DIPs.c -o DIPs.o -ansi -std=c99 -Wall -g
+gcc -c MovieIO.c -o MovieIO.o -ansi -std=c99 -Wall -g
+gcc -c Image.c -o Image.o -ansi -std=c99 -Wall -g
+gcc -c Movie.c -o Movie.o -ansi -std=c99 -Wall -g
+gcc -c FileIO.c -o FileIO.o -ansi -std=c99 -Wall -g
+gcc -c IterativeFilter.c -o IterativeFilter.o -ansi -std=c99 -Wall -g
+gcc -c MovieLab.c -o MovieLab.o -ansi -std=c99 -Wall -g
+gcc -WALL ImageList.o DIPs.o MovieIO.o Image.o Movie.o FileIO.o IterativeFilter.o MovieLab.o -o MovieLab -lm
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ ./MovieLab -i cone.ppm -o hue0.yuv -start 0 -end 66 -ste p 6 -hue
+The movie file hue0.yuv has been written successfully!
+12 frames are written to the file hue0.yuv in total.
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ 
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ ./MovieLab -m hue0.yuv -o reverse1.yuv -f 12 -s 300x200  -reverse
+The movie file hue0.yuv has been read successfully!
+Operation Reverse is done!
+The movie file reverse1.yuv has been written successfully!
+12 frames are written to the file reverse1.yuv in total.
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ 
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ ./MovieLab -bw -i EH.ppm -o bw0.yuv -end 10 -start 100 - step 15
+The movie file bw0.yuv has been written successfully!
+7 frames are written to the file bw0.yuv in total.
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ 
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ ./MovieLab -reverse -o reverse2.yuv -f 7 -s 480x360 -m b w0.yuv
+The movie file bw0.yuv has been read successfully!
+Operation Reverse is done!
+The movie file reverse2.yuv has been written successfully!
+7 frames are written to the file reverse2.yuv in total.
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ make clean
+rm -f MovieLab *.yuv *.o
+]0;tusharj1@bondi:~/hw5[tusharj1@bondi ~/hw5]$ exit
+exit
+
+Script done on Sun 15 Mar 2020 10:39:00 PM PDT

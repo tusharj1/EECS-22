@@ -1,0 +1,10 @@
+Student ID: 82777648
+Name: Tushar Jain
+
+For hw4, using tje hw3 solution as our hw4 template, I implemented the new functions. New DIP functions were Enlarge,Square,and Brightness and contrast. 
+As the project asked us, all the header files were included properly to its appropriate c file and adjustments were made. 
+In the starting I changed all the old DIP functions with the help of our new concepts of pointers and structures. Then, I worked on the new functions according to the slide.
+For the square function, I iterate through the image and crop it according to the offset. 
+For my enlarge function, I find the space between my old pixels after being enlarged and generate my new pixels through my algorith. As after the enlarge function my old pixels will also get pixelated and there will be many more pixels between them.
+For my Brighness and COntrast function, I implement the new value for R,G,B after the new intensity and apply the contrast operation on the same to achieve the expected result. 
+We use Valgringin this project to prevent any memory leaks. also,Makefile was updated as asked.
