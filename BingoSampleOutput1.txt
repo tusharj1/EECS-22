@@ -1,0 +1,71 @@
+Start the game
+*** Alice ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob ***
+1 2 3
+4 5 6
+7 8 9
+
+Caller called: 1
+*** Alice ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob ***
+1 2 3
+4 5 6
+7 8 9
+
+Caller called: 2
+*** Alice ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob ***
+1 2 3
+4 5 6
+7 8 9
+
+Caller called: 4
+*** Alice ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob ***
+1 2 3
+4 5 6
+7 8 9
+
+Caller called: 8
+*** Alice ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob ***
+1 2 3
+4 5 6
+7 8 9
+
+Caller called: 6
+*** Alice ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob ***
+1 2 3
+4 5 6
+7 8 9
+
+Caller called: 3
+*** Alice Bingo! ***
+1 2 3
+4 5 6
+7 8 9
+*** Blob Bingo! ***
+1 2 3
+4 5 6
+7 8 9
+The game result:
+3 Alice Blob
